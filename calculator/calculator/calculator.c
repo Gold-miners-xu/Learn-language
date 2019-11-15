@@ -22,23 +22,23 @@ double rooting(double a,double b) {
 
 int main() {
 	double x, y;
-	char s;
+	char s[2];
 	scanf("%lf", &x);
 	for (; 1;) {
-		scanf("%c%lf", &s, &y);
-		if (s == '=')
+		scanf("%s%lf", &s[0], &y);
+		if (s[0] == '=')
 			break;
-		else if (s == '+')
+		else if (s[0] == '+')
 			x = add(x, y);
-		else if (s == '-')
+		else if (s[0] == '-')
 			x = subtract(x, y);
-		else if (s == '*')
+		else if (s[0] == '*')
 			x = multiply(x, y);
-		else if (s == '/')
+		else if (s[0] == '/')
 			x = divide(x, y);
-		else if (s == 'p')
+		else if (s[0] == 'p')
 			x = power(x, y);
-		else if (s == 'r')
+		else if (s[0] == 'r')
 			x = rooting(x,y);
 		else
 			printf(" ‰»Î”–ŒÛ");
