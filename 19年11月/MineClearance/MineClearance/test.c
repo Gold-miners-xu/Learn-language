@@ -89,18 +89,21 @@ void Replace(char showMap[ROW][COL],char mainMap[ROW][COL],
 				sum++;				
 		}
 	}
+	if (sum == 0)
 	for (int r = row - 1; r <= row + 1; r++) {
 		for (int c = col - 1; c <= col + 1; c++) {
 			if (c < 0 || c >= ROW || r < 0 || r >= COL)
 				continue;
-		
-			if (sum == 0)
 				Replace(showMap, mainMap, r, c);
-
-
+				showMap[row][col] = ' ';
 		}
 	}
-	showMap[row][col] = sum + '0';
+	else
+	{
+		showMap[row][col] = sum + '0';
+		return;
+	}
+	
 }
 void Game() {
 	char showMap[ROW][COL];
