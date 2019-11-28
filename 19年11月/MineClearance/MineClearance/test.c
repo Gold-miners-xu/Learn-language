@@ -70,11 +70,17 @@ void Player(int* row,int* col,char showMap[ROW][COL]) {
 	}
 
 }
-int Check(int* row, int* col, char mainMap[ROW][COL],int* cont) {
+int Check(int* row, int* col, char mainMap[ROW][COL],
+	char showMap[ROW][COL]) {
 	if (mainMap[*row][*col] == '0')
 		return 1;
-	*cont = *cont + 1;
-	return 0;
+	int cont = 0;
+	for (int r = 0; r < ROW; r++)
+		for (int c = 0; c < COL; c++) {
+			if(showMap[r][c] != '*')
+			cont++;
+		}
+	return cont;
 }
 void Replace(char showMap[ROW][COL],char mainMap[ROW][COL],
 	int row, int col) {
@@ -94,8 +100,11 @@ void Replace(char showMap[ROW][COL],char mainMap[ROW][COL],
 		for (int c = col - 1; c <= col + 1; c++) {
 			if (c < 0 || c >= ROW || r < 0 || r >= COL)
 				continue;
-				Replace(showMap, mainMap, r, c);
-				showMap[row][col] = ' ';
+			if (showMap[r][c] == ' ')
+				continue;
+			showMap[row][col] = ' ';
+		    Replace(showMap, mainMap, r, c);
+				
 		}
 	}
 	else
@@ -103,32 +112,31 @@ void Replace(char showMap[ROW][COL],char mainMap[ROW][COL],
 		showMap[row][col] = sum + '0';
 		return;
 	}
-	
 }
 void Game() {
 	char showMap[ROW][COL];
 	char mainMap[ROW][COL];
 	srand((unsigned)time(0));
-	int cont = 0;
 	Initialize(showMap, mainMap);
 	Print(showMap);
 	int row;
 	int col;
 	for (; 1;) {
 		Player(&row, &col, showMap);
-		if (Check(&row, &col, mainMap, &cont)) {
+		if (Check(&row, &col, mainMap,showMap) == 1) {
 			printf("ƒ„ ‰¡À\n");
 			Print(mainMap);
 			return;
 		}
-		if (cont == 71) {
+		Replace(showMap, mainMap, row, col);
+		Print(showMap);
+		if (Check(&row, &col, mainMap, showMap) == 71) {
 			printf("πßœ≤ƒ„,ƒ„”Æ¡À\n");
 			Replace(showMap, mainMap, row, col);
 			Print(showMap);
 			return;
 		}
-		Replace(showMap, mainMap, row, col);
-		Print(showMap);
+		
 	}
 }
 int main() {
