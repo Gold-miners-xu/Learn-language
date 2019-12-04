@@ -7,7 +7,11 @@ int Aliquot3(int lef, int rig) {
 	int sum = 0;
 	int ret = 0;
 	for (int i = 1; i <= rig; i++) {
-		sum += i * pow(10, (int)i - 1);
+		/*sum += i * pow(10, (int)i - 1);
+		if (i >= lef && sum % 3 == 0) {
+			ret++;
+		}*/
+		sum += i;
 		if (i >= lef && sum % 3 == 0) {
 			ret++;
 		}
