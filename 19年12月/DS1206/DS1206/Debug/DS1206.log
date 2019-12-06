@@ -1,0 +1,3 @@
+﻿  test.c
+C:\Users\x\source\repos\DS1206\DS1206\test.c(51,8): warning C4101: “next”: 未引用的局部变量
+  DS1206.vcxproj -> C:\Users\x\source\repos\DS1206\Debug\DS1206.exe
