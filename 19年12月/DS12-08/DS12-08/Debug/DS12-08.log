@@ -1,2 +1,6 @@
-﻿  test.c
-  DS12-08.vcxproj -> C:\Users\x\source\repos\DS12-08\Debug\DS12-08.exe
+﻿  sList.c
+  test.c
+  正在生成代码...
+D:\Learn\Learn-language\19年12月\DS12-08\DS12-08\test.c(23,17): warning C4013: “SListEraseAfter”未定义；假设外部返回 int
+D:\Learn\Learn-language\19年12月\DS12-08\DS12-08\sList.c(87): warning C4715: “SListfind”: 不是所有的控件路径都返回值
+  DS12-08.vcxproj -> D:\Learn\Learn-language\19年12月\DS12-08\Debug\DS12-08.exe

@@ -17,9 +17,10 @@ int main() {
 	SListPrint(pList);
 	printf("\n");
 	SListPopFront(&pList);
-	SListPopFront(&pList);
-	SListPopFront(&pList);
-	SListPopFront(&pList);
+	//SListPopFront(&pList);
+	//SListPopFront(&pList);
+	//SListPopFront(&pList);
+	SListEraseAfter(pList);
 	SListPrint(pList);
 
 	return 0;

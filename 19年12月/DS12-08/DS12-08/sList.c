@@ -70,8 +70,43 @@ void SListPopFront(SListNode** ppList) {
 		SListNode* tmp = (*ppList)->next;
 		free(*ppList);
 		*ppList = tmp;
-
 	}
 
 
 }//Í·É¾
+SListNode* SListfind(SListNode* pList, SLTDataType x) {
+	SListNode* cur = pList;
+	while (cur) {
+		if (cur->data == x) {
+			return cur;
+		}
+		else {
+			cur = cur->next;
+		}
+	}
+}//²é
+
+void SListInsertAfter(SListNode* pos, SLTDataType x) {
+	SListNode* newnode = BuyListNode(x);
+	newnode->next = pos->next;
+	pos->next = newnode;
+	
+
+}//Ôö
+void SListEraseAfter(SListNode* pos) {
+	SListNode* next = pos->next;
+	if (next != NULL) {
+		pos->next = next->next;
+		free(next);
+	}
+}
+void SListDestory(SListNode** ppList) {
+	SListNode* cur = *ppList;
+	while (cur)
+	{
+		SListNode* next = cur->next;
+		free(cur);
+		cur = next;
+	}
+	*ppList = NULL;
+}

@@ -13,3 +13,7 @@ void SListPushFront(SListNode** ppList, SLTDataType x);
 SListNode* BuyListNode(SLTDataType x);
 void SListPopBack(SListNode** ppList);
 void SListPopFront(SListNode** ppList);
+SListNode* SListfind(SListNode* pList, SLTDataType x);
+void SListInsertAfter(SListNode* pos, SLTDataType x);
+void SListEraseAfter(SListNode* pos);
+void SListDestory(SListNode** ppList);
