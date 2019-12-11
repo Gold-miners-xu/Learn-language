@@ -1,0 +1,3 @@
+﻿  test.c
+D:\Learn\Learn-language\19年12月\drink\drink\test.c(8,27): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+  drink.vcxproj -> D:\Learn\Learn-language\19年12月\drink\Debug\drink.exe
