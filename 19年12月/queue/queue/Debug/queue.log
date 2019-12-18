@@ -1,0 +1,4 @@
+﻿  test.c
+D:\Learn\Learn-language\19年12月\queue\queue\test.c(10,33): warning C4013: “malloc”未定义；假设外部返回 int
+D:\Learn\Learn-language\19年12月\queue\queue\test.c(32,6): warning C4013: “free”未定义；假设外部返回 int
+  queue.vcxproj -> D:\Learn\Learn-language\19年12月\queue\Debug\queue.exe
