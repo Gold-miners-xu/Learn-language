@@ -1,0 +1,5 @@
+﻿  test.c
+C:\Users\x\source\repos\LeetCode225\LeetCode225\test.c(29,33): warning C4013: “malloc”未定义；假设外部返回 int
+C:\Users\x\source\repos\LeetCode225\LeetCode225\test.c(51,6): warning C4013: “free”未定义；假设外部返回 int
+MSVCRTD.lib(exe_main.obj) : error LNK2019: 无法解析的外部符号 _main，该符号在函数 "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ) 中被引用
+C:\Users\x\source\repos\LeetCode225\Debug\LeetCode225.exe : fatal error LNK1120: 1 个无法解析的外部命令
