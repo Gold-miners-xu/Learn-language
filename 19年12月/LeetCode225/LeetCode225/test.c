@@ -99,6 +99,8 @@ int QueueEmpty(Queue* q) {
 
 MyStack* myStackCreate() {
 	MyStack* obj = (MyStack*)malloc(sizeof(MyStack) * sizeof(Queue));
+	obj->q1 = (Queue*)malloc(sizeof(Queue));
+	obj->q2 = (Queue*)malloc(sizeof(Queue));
 	QueueInit(obj->q1);
 	QueueInit(obj->q2);
 	return obj;
