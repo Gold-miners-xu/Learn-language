@@ -1,0 +1,4 @@
+﻿  test.c
+D:\Learn\Learn-language\19年12月\LeetCode242\LeetCode242\test.c(4,20): warning C4018: “<”: 有符号/无符号不匹配
+D:\Learn\Learn-language\19年12月\LeetCode242\LeetCode242\test.c(5,25): warning C4018: “<”: 有符号/无符号不匹配
+  LeetCode242.vcxproj -> D:\Learn\Learn-language\19年12月\LeetCode242\Debug\LeetCode242.exe
