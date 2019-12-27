@@ -1,0 +1,3 @@
+﻿  test.c
+D:\Learn\Learn-language\19年12月\LeetCode911\LeetCode911\test.c(14,23): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+  LeetCode911.vcxproj -> D:\Learn\Learn-language\19年12月\LeetCode911\Debug\LeetCode911.exe
