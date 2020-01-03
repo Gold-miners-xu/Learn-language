@@ -108,14 +108,16 @@ int HeapEmpty(Heap* hp) {
 		return 1;
 	return 0;
 }
-// 对数组进行堆排序(大根堆)
-//void HeapSort(int* a, int n) {
-//	if (n == 0)
-//		return;
-//	Heap hp;
-//	HeapCreate(&hp, a, n);
-//
-//}
+// 对数组进行堆排序
+void HeapSort(int* a, int n) {
+	Heap hp;
+	HeapCreate(&hp, a, n);
+	for (int i = 0; i < n; i++) {
+		a[i] = (&hp)->_a[0];
+		HeapPop(&hp);
+	}
+
+}
 //打印函数
 void HeapPrint(Heap* hp) {
 	assert(hp);
@@ -146,5 +148,7 @@ void TestHeap() {
 }
 int main() {
 	TestHeap();
+	int a[6] = { 2,5,6,8,4,3 };
+	HeapSort(a, 6);
 	return 0;
 }
