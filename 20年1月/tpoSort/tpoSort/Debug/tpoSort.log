@@ -1,3 +1,4 @@
-﻿  test.cpp
-D:\Learn\Learn-language\20年1月\tpoSort\tpoSort\test.cpp(78): warning C4715: “GetTop”: 不是所有的控件路径都返回值
+﻿  源.cpp
+D:\Learn\Learn-language\20年1月\tpoSort\tpoSort\源.cpp(65,42): warning C4474: printf: 格式字符串中传递的参数太多
+D:\Learn\Learn-language\20年1月\tpoSort\tpoSort\源.cpp(65,42): message : 占位符和其参数预计 0 可变参数，但提供的却是 2 参数
   tpoSort.vcxproj -> D:\Learn\Learn-language\20年1月\tpoSort\Debug\tpoSort.exe
