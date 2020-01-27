@@ -1,0 +1,5 @@
+﻿  test.c
+D:\Learn\Learn-language\20年1月\LeetCode67\LeetCode67\test.c(15,27): warning C4013: “malloc”未定义；假设外部返回 int
+D:\Learn\Learn-language\20年1月\LeetCode67\LeetCode67\test.c(21,37): warning C4047: “=”:“char”与“char *”的间接级别不同
+D:\Learn\Learn-language\20年1月\LeetCode67\LeetCode67\test.c(25,41): warning C4047: “=”:“char”与“char *”的间接级别不同
+  LeetCode67.vcxproj -> D:\Learn\Learn-language\20年1月\LeetCode67\Debug\LeetCode67.exe
