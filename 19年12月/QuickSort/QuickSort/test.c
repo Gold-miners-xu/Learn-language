@@ -7,7 +7,7 @@ void QuickSort(int* a, int left, int rit) {
 	int tmp;
 	int i = left, j = rit;
 	for (; i < j;) {
-		if (i<j && a[i] <= a[j]) {
+		while (i<j && a[i] <= a[j]) {
 			j--;
 		}
 		tmp = a[i];
