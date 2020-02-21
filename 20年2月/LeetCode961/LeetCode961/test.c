@@ -1,0 +1,13 @@
+#include<stdio.h>
+int repeatedNTimes(int* A, int ASize) {
+	for (int i = 0; i < ASize; i++) {
+		for (int j = i + 1; j < ASize; j++) {
+			if (A[i] == A[j])
+				return A[i];
+		}
+	}
+	return 0;
+}
+int main() {
+	return 0;
+}
