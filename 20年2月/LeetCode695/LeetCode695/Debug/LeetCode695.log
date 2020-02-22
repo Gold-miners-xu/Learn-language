@@ -1,0 +1,4 @@
+﻿  test.c
+D:\Learn\Learn-language\20年2月\LeetCode695\LeetCode695\test.c(48,16): warning C4047: “函数”:“int **”与“int [3][3]”的间接级别不同
+D:\Learn\Learn-language\20年2月\LeetCode695\LeetCode695\test.c(48,16): warning C4024: “Island”: 形参和实参 1 的类型不同
+  LeetCode695.vcxproj -> D:\Learn\Learn-language\20年2月\LeetCode695\Debug\LeetCode695.exe
