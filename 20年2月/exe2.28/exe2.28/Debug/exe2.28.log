@@ -1,0 +1,6 @@
+﻿  test.c
+D:\Learn\Learn-language\20年2月\exe2.28\exe2.28\test.c(6,12): warning C4018: “<”: 有符号/无符号不匹配
+D:\Learn\Learn-language\20年2月\exe2.28\exe2.28\test.c(19,8): warning C4018: “>”: 有符号/无符号不匹配
+D:\Learn\Learn-language\20年2月\exe2.28\exe2.28\test.c(94,27): warning C4047: “函数”:“int **”与“int [3][3]”的间接级别不同
+D:\Learn\Learn-language\20年2月\exe2.28\exe2.28\test.c(94,27): warning C4024: “MatrixFind”: 形参和实参 1 的类型不同
+  exe2.28.vcxproj -> D:\Learn\Learn-language\20年2月\exe2.28\Debug\exe2.28.exe
