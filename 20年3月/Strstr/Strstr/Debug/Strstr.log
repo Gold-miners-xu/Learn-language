@@ -1,0 +1,5 @@
+﻿  test.c
+D:\Learn\Learn-language\20年3月\Strstr\Strstr\test.c(10,1): warning C4090: “初始化”: 不同的“const”限定符
+D:\Learn\Learn-language\20年3月\Strstr\Strstr\test.c(11,1): warning C4090: “初始化”: 不同的“const”限定符
+D:\Learn\Learn-language\20年3月\Strstr\Strstr\test.c(31,1): warning C4090: “初始化”: 不同的“const”限定符
+  Strstr.vcxproj -> D:\Learn\Learn-language\20年3月\Strstr\Debug\Strstr.exe
