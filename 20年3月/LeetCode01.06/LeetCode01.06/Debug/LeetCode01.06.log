@@ -1,0 +1,3 @@
+﻿  test.c
+D:\Learn\Learn-language\20年3月\LeetCode01.06\LeetCode01.06\test.c(17,20): warning C4018: “<”: 有符号/无符号不匹配
+LINK : fatal error LNK1168: 无法打开 D:\Learn\Learn-language\20年3月\LeetCode01.06\Debug\LeetCode01.06.exe 进行写入
