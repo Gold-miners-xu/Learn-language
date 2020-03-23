@@ -1,0 +1,3 @@
+﻿  test.c
+D:\Learn\Learn-language\20年3月\Strncat\Strncat\test.c(8,20): warning C4018: “<”: 有符号/无符号不匹配
+  Strncat.vcxproj -> D:\Learn\Learn-language\20年3月\Strncat\Debug\Strncat.exe
