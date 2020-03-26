@@ -23,6 +23,36 @@ void Init(Contact* addressBook) {
 	}
 	return;
 }
+//读取文件内容
+void load(Contact* addressBook) {
+	FILE* fp = fopen("D:/test.txt","r");
+	if (fp == NULL) {
+		printf("读取失败\n");
+		return;
+	}
+	PersonInfo tmp = { 0 };
+	while (1) {
+		int n = fread(&tmp, sizeof(PersonInfo), 1, fp);
+		if (n < 1) {
+			break;
+		}
+		addressBook->con[addressBook->size] = tmp;
+		addressBook->size++;
+	}
+	fclose(fp);
+}
+//写入文件
+void save(const Contact* addressBook) {
+	FILE* fp = fopen("D:/test.txt", "w");
+	if (fp == NULL) {
+		printf("打开文件失败\n");
+		return;
+	}
+	for (int i = 0; i < addressBook->size; i++) {
+		fwrite(&addressBook->con[i], sizeof(PersonInfo), 1, fp);
+	}
+	fclose(fp);
+}
 void Add(Contact* addressBook) {
 	printf("新增联系人\n");
 	if (addressBook->size >= MAX_SIZE) {
@@ -131,10 +161,11 @@ int Menu() {
 int main() {
 	Contact addressBook;
 	Init(&addressBook);
-	
+	load(&addressBook);
 	while (1) {
 		int choice = Menu();
 		if (choice == 0) {
+			save(&addressBook);
 			break;
 		}
 		if (choice == 1) {
