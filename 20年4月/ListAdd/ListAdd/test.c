@@ -16,7 +16,8 @@ struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2) {
 	while (p1 != NULL || p2 != NULL) {
 		if (p1 != NULL && p2 != NULL) {
 			tmp->val = p2->val + p1->val + count;
-
+			p1 = p1->next;
+			p2 = p2->next;
 		}
 		else if (p1 == NULL) {
 			tmp->val = p2->val + count;
@@ -46,10 +47,22 @@ struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2) {
 		free(tmp);
 		tail->next = NULL;
 	}
-	printf("%d", head->val);
+	//printf("%d",head->val);
 	return head;
 }
 int main() {
-
+	Node* head1 = (Node*)malloc(sizeof(Node));
+	head1->val = 6;
+	Node* head2 = (Node*)malloc(sizeof(Node));
+	head2->val = 8;
+	Node* newNode1 = (Node*)malloc(sizeof(Node));
+	head1->next = newNode1;
+	newNode1->val = 3;
+	newNode1->next = NULL;
+	Node* newNode2 = (Node*)malloc(sizeof(Node));
+	head2->next = newNode2;
+	newNode2->val = 7;
+	newNode2->next = NULL;
+	addTwoNumbers(head1, head2);
 	return 0;
 }
