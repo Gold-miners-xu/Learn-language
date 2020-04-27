@@ -18,4 +18,6 @@ void swap(Data* val, int i, int j);
 //½¨¶Ñ
 void build(heap* hp);
 //²åÈëÔªËØ
-void insert(heap* hp, Data);
+void insert(heap* hp, Data x);
+//À©Èİ
+void inCapacity(heap* hp);

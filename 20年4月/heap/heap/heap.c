@@ -37,3 +37,22 @@ void build(heap* hp) {
 		parent--;
 	}
 }
+//À©ÈÝ
+void inCapacity(heap* hp) {
+	hp->val = realloc(hp->val, sizeof(int) * 2 * hp->size);
+	if (hp->val == NULL)
+		printf("À©ÈÝÊ§°Ü\n");
+	hp->capacity *= 2;
+}
+void insert(heap* hp, Data x) {
+	if (hp->size == hp->capacity) {
+		inCapacity(hp);
+	}
+	hp->val[hp->size] = x;
+	int child = hp->size;
+	hp->size++;
+	while (child > 0 && hp->val[child] < hp->val[(child - 1) / 2]) {
+		swap(hp->val, child, (child - 1) / 2);
+		child = (child - 1) / 2;
+	}
+}
