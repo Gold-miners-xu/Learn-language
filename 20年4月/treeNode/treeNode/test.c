@@ -6,6 +6,12 @@ void test() {
 	printf("%d ", BinaryTreeSize(root));
 	printf("%d ",BinaryTreeLeafSize(root));
 	printf("%d ", BinaryTreeLevelKSize(root,5));
+	BTNode* res = BinaryTreeFind(root, 'x');
+	BinaryTreeLevelOrder(root);
+	BinaryTreeComplete(root);
+	BinaryTreePrevOrderno(root);
+	BinaryTreeInOrderno(root);
+	BinaryTreePostOrderno(root);
 }
 int main() {
 	test();
