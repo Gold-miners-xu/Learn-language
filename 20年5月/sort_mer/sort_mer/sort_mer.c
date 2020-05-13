@@ -28,12 +28,12 @@ void sortMer(int* arr, int size) {
 	int k = 1;
 	int* tmp = (int*)malloc(sizeof(int) * size);
 	while (k < size) {
-		for (int i = 0; i < size; i += k) {
+		for (int i = 0; i < size; i += (2 * k)) {
 			int begin = i;
 			int mid = i + k - 1;
 			if (mid >= size - 1)
 				break;
-			int end = i + (2 * k);
+			int end = i + (2 * k) - 1;
 			if (end >= size)
 				end = size - 1;
 			Mer(arr, begin, mid, end, tmp);
