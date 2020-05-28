@@ -1,0 +1,3 @@
+﻿  printDate.cpp
+D:\Learn\Learn-language\20年5月\printDate\printDate\printDate.cpp(52,7): warning C4101: “cont”: 未引用的局部变量
+  printDate.vcxproj -> D:\Learn\Learn-language\20年5月\printDate\Debug\printDate.exe
