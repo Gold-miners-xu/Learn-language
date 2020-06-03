@@ -23,27 +23,23 @@ bool cmp(const activity& a, const activity& b) {
 int greedy(vector<activity> activities) {
 	int len = activities.size();
 	int ret = 0;
-	while (1) {
-		bool get = false;
-		for (int i = 0; i < len; i++) {
-			int time;
-			if (!activities[i].processed) {
-				ret++;
-				time = activities[i].end;
-				activities[i].processed = true;
-			}
-			else
-				continue;
-			for (int j = i + 1; j < len; j++) {
-				if (!activities[j].processed && activities[j].start >= time) {
-					activities[j].processed = true;
-					time = activities[j].end;
-				}
+	for (int i = 0; i < len; i++) {
+		int time;
+		if (!activities[i].processed) {
+			ret++;
+			time = activities[i].end;
+			activities[i].processed = true;
+		}
+		else
+			continue;
+		for (int j = i + 1; j < len; j++) {
+			if (!activities[j].processed && activities[j].start >= time) {
+				activities[j].processed = true;
+				time = activities[j].end;
 			}
 		}
-		if (!get)
-			break;
 	}
+
 	return ret;
 }
 int main(int argc, char** argv) {
