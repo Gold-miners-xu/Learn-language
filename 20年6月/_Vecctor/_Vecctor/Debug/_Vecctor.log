@@ -2,5 +2,5 @@
 D:\Learn\Learn-language\20年6月\_Vecctor\_Vecctor\Vector.cpp(36,2): warning C4018: “<”: 有符号/无符号不匹配
 D:\Learn\Learn-language\20年6月\_Vecctor\_Vecctor\Vector.cpp(33): message : 在编译 类 模板 成员函数“void Vector<int>::reserve(size_t)”时
 D:\Learn\Learn-language\20年6月\_Vecctor\_Vecctor\Vector.cpp(28): message : 查看对正在编译的函数 模板 实例化“void Vector<int>::reserve(size_t)”的引用
-D:\Learn\Learn-language\20年6月\_Vecctor\_Vecctor\Vector.cpp(47): message : 查看对正在编译的 类 模板 实例化“Vector<int>”的引用
+D:\Learn\Learn-language\20年6月\_Vecctor\_Vecctor\Vector.cpp(137): message : 查看对正在编译的 类 模板 实例化“Vector<int>”的引用
   _Vecctor.vcxproj -> D:\Learn\Learn-language\20年6月\_Vecctor\Debug\_Vecctor.exe

@@ -102,6 +102,29 @@ public:
 		}
 		return pos;
 	}
+	Vector(const Vector& v) {
+		_start = new T[v.size()];
+		for (int i = 0; i < v.size(); i++) {
+			_start[i] = v[i];
+		}
+		_finish = _start + v.size();
+		_eos = _start + v.capacity();
+	}
+	~Vector() {
+		if (_start) {
+			delete[] _start;
+			_start = _finish = _eos = nullptr;
+		}
+	}
+	Vector<T>& operator=(Vector<T> v){
+		Swap(v);
+		return *this;
+	}
+	void Swap(Vector<T>& v) {
+		swap(v._start, _start);
+		swap(v._finish, _finish);
+		swap(v._eos, _eos);
+	}
 };
 template <class T>
 void printVector(const Vector<T>& v) {
