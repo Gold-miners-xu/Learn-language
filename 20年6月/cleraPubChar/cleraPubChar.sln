@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29424.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cleraPubChar", "cleraPubChar\cleraPubChar.vcxproj", "{B5E3B562-B7B9-4CBA-BF65-58AC6D7FE3CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5E3B562-B7B9-4CBA-BF65-58AC6D7FE3CA}.Debug|x64.ActiveCfg = Debug|x64
+		{B5E3B562-B7B9-4CBA-BF65-58AC6D7FE3CA}.Debug|x64.Build.0 = Debug|x64
+		{B5E3B562-B7B9-4CBA-BF65-58AC6D7FE3CA}.Debug|x86.ActiveCfg = Debug|Win32
+		{B5E3B562-B7B9-4CBA-BF65-58AC6D7FE3CA}.Debug|x86.Build.0 = Debug|Win32
+		{B5E3B562-B7B9-4CBA-BF65-58AC6D7FE3CA}.Release|x64.ActiveCfg = Release|x64
+		{B5E3B562-B7B9-4CBA-BF65-58AC6D7FE3CA}.Release|x64.Build.0 = Release|x64
+		{B5E3B562-B7B9-4CBA-BF65-58AC6D7FE3CA}.Release|x86.ActiveCfg = Release|Win32
+		{B5E3B562-B7B9-4CBA-BF65-58AC6D7FE3CA}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E3E95114-0365-4C08-8F9B-0F3EFCB34D36}
+	EndGlobalSection
+EndGlobal
