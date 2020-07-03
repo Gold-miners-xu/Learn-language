@@ -1,9 +1,5 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<math.h>
 #include<iostream>
 using namespace std;
-#define LEN sizeof(Poly)
 
 typedef struct term {
 	int coef;		//系数
@@ -61,6 +57,7 @@ public:
 				if (cur->expn == next->expn) {
 					cur->coef += next->coef;
 					earse(next);
+					continue;
 				}
 				next = next->next;
 			}
@@ -202,6 +199,10 @@ poly newpoly() {
 		cin >> choice;
 		if (choice == 0)
 			break;
+		else if (choice != 1) {
+			cout << "输入数据有误,请重新输入" << endl;
+			break;
+		}
 		cout << "请输入系数:";
 		int x, y;
 		cin >> x;
@@ -211,6 +212,7 @@ poly newpoly() {
 		Link* newNode = newLink(x, y);
 		if(newNode)
 			newpoly += *newNode;
+		delete newNode;
 	}
 	return newpoly;
 }
