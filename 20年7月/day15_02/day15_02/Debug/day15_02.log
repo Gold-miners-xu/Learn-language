@@ -1,0 +1,3 @@
+﻿  test.cpp
+D:\Learn\Learn-language\20年7月\day15_02\day15_02\test.cpp(6,20): warning C4018: “<”: 有符号/无符号不匹配
+D:\Learn\Learn-language\20年7月\day15_02\day15_02\test.cpp(44): error C4716: “findMinimum”: 必须返回一个值
