@@ -1,0 +1,5 @@
+﻿  test.cpp
+D:\Learn\Learn-language\20年7月\day16__02\day16__02\test.cpp(63,11): warning C4018: “<”: 有符号/无符号不匹配
+D:\Learn\Learn-language\20年7月\day16__02\day16__02\test.cpp(69,11): warning C4018: “<”: 有符号/无符号不匹配
+D:\Learn\Learn-language\20年7月\day16__02\day16__02\test.cpp(43): warning C4715: “pars”: 不是所有的控件路径都返回值
+  day16__02.vcxproj -> D:\Learn\Learn-language\20年7月\day16__02\Debug\day16__02.exe
