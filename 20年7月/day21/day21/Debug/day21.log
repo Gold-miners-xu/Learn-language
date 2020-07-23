@@ -1,0 +1,4 @@
+﻿  _01.cpp
+D:\Learn\Learn-language\20年7月\day21\day21\_01.cpp(29,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\Learn\Learn-language\20年7月\day21\day21\_01.cpp(30,22): warning C4018: “<”: 有符号/无符号不匹配
+  day21.vcxproj -> D:\Learn\Learn-language\20年7月\day21\Debug\day21.exe
