@@ -1,0 +1,4 @@
+﻿  test.cpp
+D:\Learn\Learn-language\20年9月\wordBreak\wordBreak\test.cpp(6,20): warning C4018: “<”: 有符号/无符号不匹配
+D:\Learn\Learn-language\20年9月\wordBreak\wordBreak\test.cpp(20,21): warning C4018: “<”: 有符号/无符号不匹配
+  wordBreak.vcxproj -> D:\Learn\Learn-language\20年9月\wordBreak\Debug\wordBreak.exe
