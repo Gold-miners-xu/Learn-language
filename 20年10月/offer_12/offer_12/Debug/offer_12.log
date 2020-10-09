@@ -1,0 +1,6 @@
+﻿  test.cpp
+D:\Learn\Learn-language\20年10月\offer_12\offer_12\test.cpp(9,20): warning C4018: “<”: 有符号/无符号不匹配
+D:\Learn\Learn-language\20年10月\offer_12\offer_12\test.cpp(10,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\Learn\Learn-language\20年10月\offer_12\offer_12\test.cpp(31,14): warning C4018: “<”: 有符号/无符号不匹配
+D:\Learn\Learn-language\20年10月\offer_12\offer_12\test.cpp(39,14): warning C4018: “<”: 有符号/无符号不匹配
+  offer_12.vcxproj -> D:\Learn\Learn-language\20年10月\offer_12\Debug\offer_12.exe
